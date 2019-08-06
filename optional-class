@@ -1,0 +1,35 @@
+In approaches like ours, there is no clear demarcation between null checks and business logic. And it would be convenient if null checks could be decoupled from the business logic.
+
+For this, Java 8 gives us the Optional class.
+
+The Optional class, present in the java.util package, represents a container that may hold null or non-null values.
+It provides a number of methods to perform null check without polluting the code.
+
+        // Create under Employee class
+        Optional<Passport> passport = Optional.empty();    // The container is initially empty
+        
+        public  Optional<Passport> getPassport() {
+        return passport;
+        }
+    
+        public void setPassport(Optional<Passport> passport) {
+        this.passport = passport;
+        }
+    
+        // Providing optional passport object to the Optional class
+        Optional<Passport> p1 =Optional.of(new Passport(10121));
+        
+        // constructing employee object
+        Employee e1 = new Employee("Robert",102,10000D,p1);
+        
+        Optional<Passport> p2 =Optional.of(new Passport(10122));
+        Employee e2 = new Employee("James",105,15000D,p2);
+        
+        // to get the employee list
+        List<Employee> employeesList = Employee.getEmployeeList();
+        List<Integer> passportNumbers = new ArrayList<>(); 
+        // List to collect the passport numbers
+        for(Employee employee : employeesList) {
+        	passportNumbers.add(employee.getPassport().orElse(new Passport(0)).getPassportNo());
+           }
+        passportNumbers.forEach(x->System.out.println("Passport number: "+x));
