@@ -9,7 +9,7 @@ import java.util.function.Consumer;
         System.out.println(integer);
     }
 }*/
-public class DemoForEach {
+public class ForEach {
     public static void main(String[] args) {
         // Set
         Set<String> set = new HashSet<String>();

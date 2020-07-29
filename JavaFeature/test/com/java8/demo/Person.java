@@ -1,4 +1,4 @@
-package com.java8.demo.model;
+package com.java8.demo;
 
 public class Person {
     private String name;

@@ -1,4 +1,4 @@
-package com.java8.demo.interfaces.defaults;
+package com.java8.demo.interfaces;
 
 public class DefaultInterfaceApp implements DefaultInterface{
 
