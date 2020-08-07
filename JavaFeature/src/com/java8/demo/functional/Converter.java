@@ -1,4 +1,4 @@
-package com.java8.demo.interfaces.functional;
+package com.java8.demo.functional;
 
 @FunctionalInterface
 interface Converter<F, T> {
