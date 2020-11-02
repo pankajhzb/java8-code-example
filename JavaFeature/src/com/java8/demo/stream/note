@@ -1,0 +1,17 @@
+Stream:
+Difference Between Collections Vs Streams In Java :
+1.
+Collections are mainly used to store and group the data.	
+Streams are mainly used to perform operations on data.
+2.
+You can add or remove elements from collections.
+You can’t add or remove elements from streams.
+3.
+Collections have to be iterated externally.
+Streams are internally iterated.
+4.
+Collections can be traversed multiple times.
+Streams are traversable only once.
+5.
+Collections are eagerly constructed.
+Streams are lazily constructed.

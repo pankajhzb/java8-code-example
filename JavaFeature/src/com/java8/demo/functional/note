@@ -1,0 +1,7 @@
+1.
+All Java 8 functional interfaces are organized in 
+java.util.function package. 
+Each functional interface in this package represents an 
+operation that can be performed by the lambda expression.
+2.
+
