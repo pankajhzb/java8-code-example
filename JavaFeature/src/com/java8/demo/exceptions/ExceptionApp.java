@@ -10,6 +10,9 @@ public class ExceptionApp {
 
     public static void main(String[] ergs) {
         checkEvenNumber(5);
+        checkEvenNumber(0);
+        checkEvenNumber(-1);
+        checkEvenNumber(333333445);
     }
 
     public static void checkEvenNumber(int i) {
@@ -20,6 +23,9 @@ public class ExceptionApp {
                 System.out.println("Odd number.");
             }
 
+            // ArithmeticException
+            int value = 4/i;
+            
             // no need exception handling and connection close
             File f = new File("c:\test.text");
             f.exists();

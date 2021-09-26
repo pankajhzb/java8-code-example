@@ -35,12 +35,12 @@ public class FlatMap {
 		// 1
 		String[][] data = new String[][] { { "a", "b" }, { "a", "d" }, { "e", "a" } };
 		Stream<String[]> streamData = Arrays.stream(data);
-		// map, not work
+		// map, not works
 		Stream<Object> streamMap = streamData.map(x -> Arrays.stream(x));
 		Stream<Object> streamFilter = streamMap.filter(x -> x.equals("a"));
 		System.out.println("__MAP ___Array of String");
 		streamFilter.forEach(System.out::println); // print nothing
-		System.out.println("__MAP ___Array of String  -  print nothing");
+		//System.out.println("__MAP ___Array of String  -  print nothing");
 
 		// flatmap, works
 		Stream<String[]> streamData2 = Arrays.stream(data);

@@ -46,11 +46,15 @@ public class FunctionalInterfaceTest {
 
 		List<Student> mathematicsStudents = new ArrayList<Student>();
 
-		for (Student student : listOfStudents) {
-			if (mathematicsPredicate.test(student)) {
-				mathematicsStudents.add(student);
-			}
-		}
+		/*
+		 * for (Student student : listOfStudents) { if
+		 * (mathematicsPredicate.test(student)) { mathematicsStudents.add(student); } }
+		 */
+		
+		// op2
+		listOfStudents.forEach(s -> mathematicsPredicate.test(s));
+		// op3
+		listOfStudents.forEach(mathematicsPredicate::test);
 	}
 
 	// b) Consumer – Consumes an object
