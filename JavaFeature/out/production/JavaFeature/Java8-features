@@ -1,0 +1,35 @@
+Java 8 features
+Java Language
+
+	Default and Static Methods in Interfaces
+		If any class in the hierarchy has a method with same signature, 
+		then default methods become irrelevant. 
+		A default method cannot override a method from java.lang.Object.
+
+	Repeating Annotations
+
+	Functional Interfaces
+
+	Lambda Expressions
+Method reference
+	(String s) -> System.out.println(s);
+	System.out::println
+	
+	Predefined Functional - Predict Interface
+	System.out.println("Printing Even Employee Ids");
+        evaluate(lstEmpIds, (n) -> n % 2 == 0);
+        System.out.println("Printing Odd Employee Ids");
+        evaluate(lstEmpIds, (n) -> n % 2 == 1);
+        System.out.println("Printing Employee Ids less than 1500");
+        evaluate(lstEmpIds, (n) -> n < 1500);
+Java Compiler
+
+	Named Parameters
+
+Java Libraries
+
+	Optional class
+
+	Date/Time API
+
+	Stream API

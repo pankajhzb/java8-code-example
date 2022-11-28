@@ -1,0 +1,21 @@
+   public class PredictInterfaceTest
+   {
+   
+        public static void main()
+        {
+          System.out.println("Printing Even Employee Ids");
+          evaluate(lstEmpIds, (n) -> n % 2 == 0);
+          System.out.println("Printing Odd Employee Ids");
+          evaluate(lstEmpIds, (n) -> n % 2 == 1);
+          System.out.println("Printing Employee Ids less than 1500");
+          evaluate(lstEmpIds, (n) -> n < 1500);  
+        }
+        public static void evaluate(List<Integer> listEmpId, Predicate<Integer> predicateArg)
+        {
+          for(int empId : listEmpId)
+          {
+              if(predicateArg.test(empId))
+                  System.out.println(empId);
+          }
+        }
+  }

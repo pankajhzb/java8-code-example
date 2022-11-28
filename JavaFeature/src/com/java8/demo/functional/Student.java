@@ -2,42 +2,42 @@ package com.java8.demo.functional;
 
 public class Student {
 
-	int id;
+    int id;
 
-	String name;
+    String name;
 
-	double percentage;
+    double percentage;
 
-	String specialization;
+    String specialization;
 
-	public Student(int id, String name, double percentage, String specialization) {
-		this.id = id;
+    public Student(int id, String name, double percentage, String specialization) {
+        this.id = id;
 
-		this.name = name;
+        this.name = name;
 
-		this.percentage = percentage;
+        this.percentage = percentage;
 
-		this.specialization = specialization;
-	}
+        this.specialization = specialization;
+    }
 
-	public int getId() {
-		return id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public double getPercentage() {
-		return percentage;
-	}
+    public double getPercentage() {
+        return percentage;
+    }
 
-	public String getSpecialization() {
-		return specialization;
-	}
+    public String getSpecialization() {
+        return specialization;
+    }
 
-	@Override
-	public String toString() {
-		return id + "-" + name + "-" + percentage + "-" + specialization;
-	}
+    @Override
+    public String toString() {
+        return id + "-" + name + "-" + percentage + "-" + specialization;
+    }
 }

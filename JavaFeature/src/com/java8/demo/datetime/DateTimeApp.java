@@ -1,4 +1,4 @@
-package com.pk.java8.datetime;
+package com.java8.demo.datetime;
 
 import java.time.LocalDate;
 import java.time.chrono.ChronoLocalDate;

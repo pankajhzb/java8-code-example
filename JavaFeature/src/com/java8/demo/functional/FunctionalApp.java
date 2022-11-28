@@ -6,7 +6,7 @@ public class FunctionalApp {
         Converter<Integer, String> converterIntToStr = intFrom -> String.valueOf(intFrom);
         System.out.println("converterIntToStr : " + converterIntToStr.convert(456666));
 
-        Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
+        Converter<String, Integer> converter = from -> Integer.valueOf(from);
         Integer converted = converter.convert("123");
         System.out.println("StrToInt : " + converted);    // 123
     }
