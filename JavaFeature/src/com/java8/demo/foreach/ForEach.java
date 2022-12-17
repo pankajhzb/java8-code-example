@@ -39,8 +39,7 @@ public class ForEach {
 
         //Please note that we can pass a static method in forEach() statement
         // if we want to have multiple statements to handle the list value.
-        integerList.forEach(integer -> check(integer)
-        );
+        integerList.forEach(integer -> check(integer));
 
         // Consumer to multiply 2 to every integer of a list
         Consumer<List<Integer>> modify = list ->
@@ -50,7 +49,7 @@ public class ForEach {
         };
 
         modify.accept(integerList);
-        System.out.println( " after modify :----");
+        System.out.println(" after modify :----");
         integerList.forEach(System.out::println);
 
 

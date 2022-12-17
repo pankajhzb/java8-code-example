@@ -28,6 +28,6 @@ public class LambdaAndSorting {
         // even more more sorter
         Collections.sort(names, (a, b) -> b.compareTo(a));
         // method as reference - ?
-        names.forEach(System.out ::println);
+        names.forEach(System.out::println);
     }
 }

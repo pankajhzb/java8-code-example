@@ -1,9 +1,8 @@
 package com.java8.demo.interfaces;
 
-public class DefaultInterfaceApp implements DefaultInterface{
+public class DefaultInterfaceApp implements DefaultInterface {
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         DefaultInterfaceApp d = new DefaultInterfaceApp();
         //d.square(4);
 

@@ -24,14 +24,14 @@ public class ExceptionApp {
             }
 
             // ArithmeticException
-            int value = 4/i;
-            
+            int value = 4 / i;
+
             // no need exception handling and connection close
             File f = new File("c:\test.text");
             f.exists();
 
 
-    // different type of exception need to add, which parent is different
+            // different type of exception need to add, which parent is different
             // Using ||
         } catch (ArithmeticException e) {
             throw e;

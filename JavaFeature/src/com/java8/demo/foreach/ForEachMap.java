@@ -14,11 +14,11 @@ public class ForEachMap {
         map.put("C", 3);
 
         // way 1
-        map.forEach((k,v ) -> {
-            if(k.contains("A")){
+        map.forEach((k, v) -> {
+            if (k.contains("A")) {
                 System.out.println("Key : Capital A.");
             }
-        } );
+        });
 
         // Entry set
         map.entrySet().forEach(System.out::println);
@@ -34,9 +34,9 @@ public class ForEachMap {
 
         // 2. Map Key
         Consumer<String> action1 = key ->
-                {
-                    System.out.println("Key is : " + key);
-                };
+        {
+            System.out.println("Key is : " + key);
+        };
 
         map.keySet().forEach(action1);
 

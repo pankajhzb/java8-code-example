@@ -16,8 +16,11 @@ public class StreamApp {
         System.out.println(calculate);
         System.out.println(sqrt);
 
-        Formula formulaRef = (x) -> {System.out.println("value :" + x); return x;};
+        Formula formulaRef = (x) -> {
+            System.out.println("value :" + x);
+            return x;
+        };
         formulaRef.calculate(10);
-        
+
     }
 }
