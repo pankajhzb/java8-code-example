@@ -1,4 +1,4 @@
-package com.java8.demo.method.reference;
+package com.java8.demo.reference;
 
 class Message {
     Message(String msg) {

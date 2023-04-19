@@ -7,7 +7,7 @@ import java.util.function.IntSupplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Streams {
+public class IntStreamApp {
     static int[] numbers = {4, 1, 13, 90, 16, 2, 0, 4};
 
     public static void main(String[] args) {

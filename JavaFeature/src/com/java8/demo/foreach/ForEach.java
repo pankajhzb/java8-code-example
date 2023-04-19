@@ -3,12 +3,6 @@ package com.java8.demo.foreach;
 import java.util.*;
 import java.util.function.Consumer;
 
-/*class ConsImpl implements Consumer<Integer>{
-    @Override
-    public void accept(Integer integer) {
-        System.out.println(integer);
-    }
-}*/
 public class ForEach {
     public static void main(String[] args) {
         // Set
@@ -25,7 +19,11 @@ public class ForEach {
         hashMap.put("3", "Australia");
         hashMap.put("4", "Zeneva");
         // List
-        List<Integer> integerList = Arrays.asList(4, 5, 6, 7);
+        List<Integer> integerList = Arrays.asList(1, 2, 4, 5, 6, 7, 6, 8);
+        // Find the equal pair of integer from the list.
+        integerList.forEach(i -> check(i));
+
+
         /*Consumer cons = new Consumer<Integer>(){
             public void accept(Integer integer) {
                 System.out.println(integer);
@@ -39,7 +37,7 @@ public class ForEach {
 
         //Please note that we can pass a static method in forEach() statement
         // if we want to have multiple statements to handle the list value.
-        integerList.forEach(integer -> check(integer));
+        integerList.stream().forEach(i -> integerList.forEach(j -> checkValue(i, j)));
 
         // Consumer to multiply 2 to every integer of a list
         Consumer<List<Integer>> modify = list ->
@@ -65,6 +63,12 @@ public class ForEach {
 
         set.forEach(System.out::println);
 
+    }
+
+    private static Integer checkValue(Integer i, Integer j) {
+        if(i==j)
+            return i;
+        return i;
     }
 
     private static void check(Integer integer) {
