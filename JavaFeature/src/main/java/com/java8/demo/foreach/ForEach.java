@@ -66,7 +66,7 @@ public class ForEach {
     }
 
     private static Integer checkValue(Integer i, Integer j) {
-        if(i==j)
+        if (i == j)
             return i;
         return i;
     }

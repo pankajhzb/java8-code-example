@@ -11,7 +11,7 @@ import java.util.stream.Stream;
  * Stream<String[]> Stream<Set<String>> Stream<List<String>>
  * Stream<List<Object>>
  * <p>
- * But, the Stream operations (filter, sum, distinct…) and collectors do not
+ * But, the Stream operations (filter, sum, distinctï¿½) and collectors do not
  * support it, so, we need flatMap() to do the following conversion :
  * Stream<String[]> -> flatMap -> Stream<String> Stream<Set<String>> -> flatMap
  * -> Stream<String> Stream<List<String>> -> flatMap -> Stream<String>

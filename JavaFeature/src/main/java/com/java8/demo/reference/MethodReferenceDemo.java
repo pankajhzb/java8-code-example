@@ -9,6 +9,6 @@ public class MethodReferenceDemo {
         names.forEach(System.out::println);
         String str = "Abh11";
         MyPrinter mp = new MyPrinter();
-        mp.print(str,(StringParser::convert));
+        mp.print(str, (StringParser::convert));
     }
 }
