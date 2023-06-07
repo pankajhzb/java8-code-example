@@ -1,6 +1,5 @@
 package com.java8.demo.collection;
 
-import java.util.Comparator;
 import java.util.*;
 import java.util.Map.Entry;
 

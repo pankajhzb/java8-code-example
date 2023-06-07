@@ -1,11 +1,13 @@
-package com.java8.demo.optional;
+package com.java8.demo.stream;
+
+import com.java8.demo.optional.User;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class OptionalApp {
+public class StreamFilterApp {
 
     public static void main(String[] args) {
 
