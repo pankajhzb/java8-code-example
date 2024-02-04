@@ -1,4 +1,4 @@
-package com.java8.demo.foreach;
+package com.java8.demo.collection;
 
 import java.util.*;
 import java.util.function.Consumer;

@@ -75,4 +75,6 @@ public class FlatMap {
         // using flatMap
         return listOfList.stream().flatMap(Collection::stream).filter(x -> x.equals("three:one")).collect(Collectors.toList());
     }
+
+
 }

@@ -38,13 +38,10 @@ public class HashMaps {
         }
 
         List<Map.Entry<Integer, String>> entries = new ArrayList<>(map.entrySet());
-        Collections.sort(entries, new Comparator<Entry<Integer, String>>() {
-
-            @Override
-            public int compare(Entry<Integer, String> o1, Entry<Integer, String> o2) {
-                return o1.getKey().compareTo(o2.getKey());
-            }
-        });
+        //op1
+        Collections.sort(entries, Comparator.comparing(Entry::getKey));
+        //op2
+        Collections.sort(entries, Entry.comparingByKey());
 
         entries.stream().forEach(System.out::println);
     }

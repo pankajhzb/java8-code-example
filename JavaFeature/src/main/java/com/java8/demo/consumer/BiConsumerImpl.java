@@ -1,4 +1,4 @@
-package com.java8.demo.foreach;
+package com.java8.demo.consumer;
 
 import java.util.function.BiConsumer;
 
