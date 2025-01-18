@@ -1,13 +1,17 @@
 package com.java8.feature.functional;
 
+import java.util.function.Function;
+
 public class FunctionalApp {
     public static void main(String[] args) {
+        //Function interface apply()
 
-        Converter<Integer, String> converterIntToStr = intFrom -> String.valueOf(intFrom);
-        System.out.println("converterIntToStr : " + converterIntToStr.convert(456666));
+        Function<Integer, Integer> intToDouble = i->i*i;
+        Converter<Integer, String> converterIntToStr = String::valueOf;
+        Converter<String, Integer> converterStrToInt = Integer::valueOf;
 
-        Converter<String, Integer> converter = from -> Integer.valueOf(from);
-        Integer converted = converter.convert("123");
-        System.out.println("StrToInt : " + converted);    // 123
+        System.out.println("intToDouble : " + intToDouble.apply(2));
+        System.out.println("IntToStr : " + converterIntToStr.convert(456666));
+        System.out.println("StrToInt : " + converterStrToInt.convert("123"));
     }
 }
